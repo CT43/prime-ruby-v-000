@@ -1,14 +1,14 @@
 require 'pry'
 
 def prime?(n)
-  counter = 1
+  counter = 2
   while counter < n
-    
+
     if n % counter == 0
       return false
     else
       counter += 1
     end
-    return true
   end
+  return true
 end
