@@ -1,9 +1,11 @@
 require 'pry'
 
 def prime?(n)
-  counter = 2
+  counter = 1
   if n < 0 || n == 0 || n == 1
     return false
+  elsif n == 2
+    return true 
   else
     until counter = n
       if n % counter == 0
