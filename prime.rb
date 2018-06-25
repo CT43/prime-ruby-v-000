@@ -2,7 +2,7 @@ require 'pry'
 
 def prime?(n)
   counter = 2
-  while counter < n
+  while counter < n.abs
 
     if n.abs % counter == 0
       return false
