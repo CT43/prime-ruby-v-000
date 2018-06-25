@@ -7,9 +7,10 @@ def prime?(n)
   counter = 2
   while n < counter
     if n % counter
-      return true
+      return false
     else
       counter += 1
     end
   end
+  return true
 end
