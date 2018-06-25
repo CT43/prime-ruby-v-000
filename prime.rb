@@ -1,18 +1,14 @@
 require 'pry'
 
 def prime?(n)
-  counter = 2
-  while n.abs < counter
-  if n < 0
+  if n < 0 || n == 0 || n == 1 
     return false
-  else
-    if n.abs % counter == 0
-      return false
-    else
+  end
+  counter = 2
+  while n < counter
+    if n % counter
+      return true
+    else 
       counter += 1
     end
-  end
-end
-  return true
-
 end
