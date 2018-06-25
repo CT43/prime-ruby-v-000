@@ -12,6 +12,7 @@ def prime?(n)
       counter += 1
     end
   end
-  return true
 end
+  return true
+
 end
