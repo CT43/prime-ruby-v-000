@@ -3,7 +3,7 @@ require 'pry'
 def prime?(n)
   if n < 0 || n == 0 || n == 1
     return false
-  end
+  else
   counter = 2
   while n < counter
     if n % counter == 0
@@ -14,4 +14,5 @@ def prime?(n)
       counter += 1
     end
   end
+end
 end
