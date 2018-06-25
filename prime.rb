@@ -5,7 +5,7 @@ def prime?(n)
     return false
   else
     (2...n-1).to_a.each do |factor| 
-      n % factor == 0 ? false : true
+      n % factor == 0 ? return false : true
     end
   end
 end
