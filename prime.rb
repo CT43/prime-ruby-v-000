@@ -11,6 +11,6 @@ def prime?(n)
     else
       counter += 1
     end
+    return true
   end
-  return true
 end
