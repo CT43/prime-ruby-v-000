@@ -1,4 +1,4 @@
-# Add  code here!
+require 'pry'
 
 def prime?(n)
   counter = 2
@@ -7,6 +7,7 @@ def prime?(n)
       return false
     else
       counter += 1
+      binding.pry
     end
     return true
   end
