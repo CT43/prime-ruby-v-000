@@ -2,8 +2,9 @@ require 'pry'
 
 def prime?(n)
   counter = 2
-  while counter < n.abs
-
+  if n < 0
+    return false
+  else
     if n.abs % counter == 0
       return false
     else
@@ -11,4 +12,5 @@ def prime?(n)
     end
   end
   return true
+end
 end
