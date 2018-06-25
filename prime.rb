@@ -8,10 +8,11 @@ def prime?(n)
     until counter = n
       if n % counter == 0
         return false
+      elsif counter == n-1
+        return true
       else
         counter += 1
       end
     end
-    return true
   end
 end
